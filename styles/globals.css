@@ -1,16 +1,55 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: 'national-2';
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+    src: url('../styles/assets/fonts/National2/condensed-regular.otf')
+      format('opentype');
+  }
+  @font-face {
+    font-family: 'national-2';
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+    src: local('National'),
+      url('../styles/assets/fonts/National2/condensed-bold.otf')
+        format('opentype');
+  }
+  h1,
+  h2 {
+    @apply font-national2;
+    @apply uppercase;
+    @apply font-bold;
+    @apply text-primary;
+    @apply mb-1;
+  }
+  h1 {
+    @apply text-hdln2;
+    @apply desktop:text-hdln1;
+  }
+  h2 {
+    @apply text-hdln4;
+    @apply desktop:text-hdln3;
+  }
+  p,
+  a,
+  span,
+  li {
+    @apply text-parag3;
+    @apply desktop:text-parag2;
+    @apply font-semibold;
+    @apply mb-1;
+  }
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-* {
-  box-sizing: border-box;
+@layer utilities {
+  .parag-large {
+    @apply text-parag2;
+    @apply desktop:text-parag1;
+  }
 }
