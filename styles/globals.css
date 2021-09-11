@@ -45,11 +45,25 @@
     @apply font-semibold;
     @apply mb-1;
   }
+
+  a {
+    @apply cursor-pointer;
+  }
+  a:hover {
+    @apply opacity-75;
+  }
 }
 
 @layer utilities {
   .parag-large {
     @apply text-parag2;
     @apply desktop:text-parag1;
+  }
+
+  .burger-path {
+    stroke-width: 3px;
+    @apply stroke-current;
+    @apply text-primary;
+    transform-origin: 50% 50%;
   }
 }

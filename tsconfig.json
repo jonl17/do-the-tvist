@@ -18,7 +18,8 @@
       "@src/*": ["src/*"],
       "@root/*": ["./*"],
       "@cmp/*": ["src/cmp/*"],
-      "@pages/*": ["./pages/*"]
+      "@pages/*": ["./pages/*"],
+      "@templates/*": ["src/templates/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],

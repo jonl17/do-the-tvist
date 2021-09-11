@@ -1,5 +1,5 @@
 module.exports = {
-  purge: [],
+  purge: ['./src/**/*.tsx', './pages/**/*.tsx'],
   darkMode: false, // or 'media' or 'class'
   theme: {
     fontFamily: {
@@ -29,10 +29,7 @@ module.exports = {
       mobile: '480px',
       // => @media (min-width: 640px) { ... }
 
-      tablet: '768px',
-      // => @media (min-width: 1024px) { ... }
-
-      desktop: '1280px',
+      desktop: '1080px',
       // => @media (min-width: 1280px) { ... }
     },
     extend: {},
