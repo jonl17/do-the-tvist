@@ -18,7 +18,7 @@ const Menu = ({ pages = [] }: MenuProps) => {
   const closeMobileMenu = () => setMobileMenuOpen(false)
 
   return (
-    <div className='px-12 border-2 h-28 flex items-center justify-between'>
+    <div className='px-6 desktop:px-12 h-28 flex items-center justify-between'>
       <Logo />
       <div>
         <div className='block desktop:hidden'>

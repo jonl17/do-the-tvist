@@ -66,4 +66,9 @@
     @apply text-primary;
     transform-origin: 50% 50%;
   }
+
+  .svg-ghost > path {
+    @apply fill-current;
+    @apply text-white;
+  }
 }

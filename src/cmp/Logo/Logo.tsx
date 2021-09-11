@@ -1,12 +1,26 @@
 import React from 'react'
-import Link from 'next/link'
 import Icon from '@cmp/Icon'
+import cn from 'classnames'
 
-const Logo = () => {
+type Props = {
+  ghost?: boolean
+}
+
+const Logo = ({ ghost }: Props) => {
   return (
     <a>
-      <Icon className='hidden desktop:block' type='logo-main' />
-      <Icon className='desktop:hidden' type='logo-secondary' />
+      <Icon
+        className={cn('hidden desktop:block', {
+          'svg-ghost': ghost,
+        })}
+        type='logo-main'
+      />
+      <Icon
+        className={cn('desktop:hidden', {
+          'svg-ghost': ghost,
+        })}
+        type='logo-secondary'
+      />
     </a>
   )
 }

@@ -24,6 +24,7 @@ module.exports = {
         DEFAULT: '#37373C',
         light: '#EBEBEB',
       },
+      white: '#fff',
     },
     screens: {
       mobile: '480px',

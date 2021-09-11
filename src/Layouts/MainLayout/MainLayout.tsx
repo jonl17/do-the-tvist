@@ -1,5 +1,6 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import Menu from '@cmp/Menu'
+import Footer from '@cmp/Footer'
 
 const PAGES = [
   { label: 'Verkefni', url: '/verkefni' },
@@ -11,7 +12,8 @@ const MainLayout: React.FC = ({ children }) => {
   return (
     <main>
       <Menu pages={PAGES} />
-      {children}
+      <div className='min-h-screen'>{children}</div>
+      <Footer />
     </main>
   )
 }
